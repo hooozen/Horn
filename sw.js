@@ -5,8 +5,8 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(VERSION).then(cache => {
       return cache.addAll([
-        '/index.html',
-        '/app.bundle.js',
+        './index.html',
+        './app.bundle.js',
       ]);
     })
   );
